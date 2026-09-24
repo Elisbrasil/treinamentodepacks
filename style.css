@@ -122,7 +122,12 @@ body {
   color: rgba(245, 240, 232, 0.72);
   max-width: 460px;
   line-height: 1.75;
-  margin-bottom: 52px;
+  margin-bottom: 36px;
+}
+.btn-main.btn-hero {
+  display: inline-block;
+  width: auto;
+  padding: 18px 40px;
 }
 .cta-island {
   display: inline-flex;
@@ -471,7 +476,7 @@ body {
   color: var(--black);
 }
 .testi-section {
-  background: var(--card-bg);
+  background: #ffffff;
 }
 .testi-label {
   text-align: center;
@@ -481,7 +486,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.6rem, 2.8vw, 2.2rem);
   font-weight: 900;
-  color: var(--white);
+  color: var(--text);
   text-align: center;
   margin-bottom: 52px;
 }
@@ -569,11 +574,14 @@ body {
 }
 .final-cta h2 {
   font-family: "Roboto", sans-serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
   font-weight: 900;
   color: var(--white);
-  margin-bottom: 14px;
+  max-width: 760px;
+  text-wrap: balance;
+  margin: 0 auto 14px;
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 .final-cta h2 .accent {
   color: var(--gold);
@@ -599,19 +607,26 @@ body {
   width: 100%;
 }
 .footer {
-  background: var(--black);
-  text-align: center;
-  padding: 36px 48px;
-  border-top: 1px solid rgba(168, 98, 50, 0.15);
+  background: var(--dark);
+  padding: 0 48px 28px;
+}
+.footer-bar {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(247, 244, 239, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #8896a2;
 }
 .footer-logo {
-  width: 64px;
-  margin: 0 auto 16px;
-}
-.footer p {
-  font-size: 0.75rem;
-  color: rgba(245, 240, 232, 0.3);
-  letter-spacing: 0.04em;
+  display: block;
+  width: 150px;
+  height: auto;
 }
 .gold-divider {
   height: 3px;
@@ -691,19 +706,33 @@ body {
     );
   }
   .hero-content {
-    padding-top: 60vh;
-    padding-bottom: 56px;
+    padding-top: 42vh;
+    padding-bottom: 32px;
   }
   .hero-tag {
     font-size: 12px;
     padding: 8px 16px;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
   }
   .hero h1 {
-    font-size: 2.1rem;
+    font-size: 1.95rem;
+    margin-bottom: 12px;
+  }
+  .hero-sub {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+  .btn-main.btn-hero {
+    display: block;
+    width: 100%;
   }
   .carousel-slide {
     padding: 0;
+  }
+  .section-full > .section {
+    padding-left: 0;
+    padding-right: 0;
   }
   .urgency-img-wrap {
     display: none;
@@ -712,9 +741,7 @@ body {
 
 /* Destaques acobreados mais claros sobre fundo escuro (contraste) */
 .urgency-section .section-label,
-.testi-section .section-label,
 .urgency-bold,
-.testi-heading .accent,
 .final-cta h2 .accent {
   color: var(--gold-light);
 }
