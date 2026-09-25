@@ -54,32 +54,20 @@
     }
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero-dra-ana.webp" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-latin.woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Tag Manager 
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-P56DBJTP');</script>
-  <!-- End Google Tag Manager -->
-
-  <!--<script type="text/javascript">
+  <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
       t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "wnwdybqj6p");
-  </script>-->
+  </script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) 
+  <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P56DBJTP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <!-- HERO -->
@@ -118,7 +106,7 @@
         <div class="reveal-right">
           <div class="news-card">
             <div class="news-img-wrap">
-              <img data-src="__NEWS__" alt="Notícia G1 Anvisa" src="" style="width:100%;display:block">
+              <img src="img/noticia-anvisa.webp" alt="Notícia G1: Anvisa faz operação para fiscalizar clínicas de estética" width="800" height="771" loading="lazy" decoding="async">
             </div>
           </div>
         </div>
@@ -145,7 +133,7 @@
           <p class="urgency-bold">SÓ O QUE ESTIVER DOCUMENTADO<br>VAI TE DEFENDER!</p>
         </div>
         <div class="urgency-img-wrap reveal-right">
-          <img data-src="__BOOK__" alt="Guia Jurídico da Harmonização Facial" src="">
+          <img src="img/guia-juridico.webp" alt="Guia Jurídico da Harmonização Facial, de Guilherme Cattani" width="750" height="1000" loading="lazy" decoding="async">
           <div class="urgency-img-label">Guia Jurídico da Harmonização Facial — Guilherme Cattani</div>
         </div>
       </div>
@@ -161,7 +149,7 @@
         <div class="reveal-left">
           <div class="learn-img-outer">
             <div class="learn-img-deco"></div>
-            <img src="img/treinamento-mockup.webp" alt="Treinamento dos Documentos — Juk Cattani">
+            <img src="img/treinamento-mockup.webp" alt="Treinamento dos Documentos — Juk Cattani" width="1672" height="941" loading="lazy" decoding="async">
           </div>
         </div>
         <div class="learn-content reveal-right">
@@ -193,9 +181,9 @@
       <h2 class="testi-heading reveal">O que dizem quem já <span class="accent">organizou sua clínica</span></h2>
       <div class="carousel-wrap reveal">
         <div class="carousel-track" id="testiTrack">
-          <div class="carousel-slide"><img src="img/depoimento-1.webp" alt="Depoimento: aprendi as diferenças fundamentais dos documentos e isso me trouxe muito mais paz" width="1200" height="587"></div>
-          <div class="carousel-slide"><img src="img/depoimento-2.webp" alt="Depoimento: agora eu sei o que faltava pra não precisar devolver dinheiro de novo" width="1200" height="567"></div>
-          <div class="carousel-slide"><img src="img/depoimento-3.webp" alt="Depoimento: no treinamento entendi que faltavam cláusulas nos meus termos" width="1200" height="664"></div>
+          <div class="carousel-slide"><img src="img/depoimento-1.webp" alt="Depoimento: aprendi as diferenças fundamentais dos documentos e isso me trouxe muito mais paz" width="1000" height="489"></div>
+          <div class="carousel-slide"><img src="img/depoimento-2.webp" alt="Depoimento: agora eu sei o que faltava pra não precisar devolver dinheiro de novo" width="1000" height="473"></div>
+          <div class="carousel-slide"><img src="img/depoimento-3.webp" alt="Depoimento: no treinamento entendi que faltavam cláusulas nos meus termos" width="1000" height="554"></div>
         </div>
       </div>
       <div class="carousel-controls">
@@ -205,9 +193,9 @@
           </svg>
         </button>
         <div class="carousel-dots" id="testiDots">
-          <button class="carousel-dot active" data-index="0"></button>
-          <button class="carousel-dot" data-index="1"></button>
-          <button class="carousel-dot" data-index="2"></button>
+          <button class="carousel-dot active" data-index="0" aria-label="Depoimento 1"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Depoimento 2"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Depoimento 3"></button>
         </div>
         <button class="carousel-btn" id="testiNext" aria-label="Próximo">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
@@ -247,11 +235,33 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-bar">
-      <img src="img/logo-juk-cattani.webp" class="footer-logo" alt="Juk Cattani Sociedade de Advogados" width="720" height="177">
+      <img src="img/logo-juk-cattani.webp" class="footer-logo" alt="Juk Cattani Sociedade de Advogados" width="720" height="177" loading="lazy" decoding="async">
       <span>© 2026 Juk Cattani Sociedade de Advogados · Todos os direitos reservados</span>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <script>
+  (function() {
+    var loaded = false;
+
+    function loadThirdParty() {
+      if (loaded) return;
+      loaded = true;
+
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P56DBJTP');
+    }
+
+    var events = ['scroll', 'mousemove', 'touchstart', 'keydown'];
+    events.forEach(function(e) {
+      window.addEventListener(e, loadThirdParty, { once: true, passive: true });
+    });
+    setTimeout(loadThirdParty, 1200);
+  })();
+  </script>
 </body>
 
 </html>
